@@ -1,0 +1,222 @@
+$bg-color: #050e03;
+$title-color: #cc131d;
+$paragraph-color: #684867;
+$thumbnail: rgb(255, 252, 53);
+$border: #707070;
+@mixin formStyle {
+  font-size: 2rem;
+  background-color: $bg-color;
+  border: none;
+}
+* {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+.header {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-color: $bg-color;
+  .nav-link {
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 12px;
+    font-size: 2rem;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+.carousel.slide {
+  padding-top: 5rem;
+  .carousel-control-prev {
+    color: white;
+  }
+}
+.carousel-item {
+  color: white;
+  padding-left: 25%;
+  padding-right: 25%;
+  h2 {
+    text-shadow: 2px 2px 5px $title-color;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  p {
+    text-shadow: 2px 2px 5px $paragraph-color;
+  }
+  p,
+  a {
+    text-align: justify;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $title-color;
+      background-color: #fff;
+    }
+  }
+}
+.bg-nav {
+  background-color: $bg-color;
+}
+.card {
+  padding: 1rem;
+  border: 1px dashed $title-color;
+  position: relative;
+  img {
+    border: 2px solid $thumbnail;
+    margin-top: 7px;
+  }
+  h4 {
+    text-align: center;
+    color: $title-color;
+    font-size: 2.4rem;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 2.2rem;
+  }
+  a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $title-color;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #fff;
+      color: $title-color;
+      border: 1px solid $title-color;
+    }
+  }
+}
+.footer {
+  background-color: $bg-color;
+  h3 {
+    color: #fff;
+    text-shadow: 4px 4px 3px $title-color;
+    font-family: "Times New Roman", Times, serif;
+  }
+  a {
+    color: white;
+    font-size: 3rem;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $title-color;
+    }
+  }
+}
+.copyright {
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  .copyright__text {
+    padding: 14px;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+.footer-right {
+  label {
+    color: white;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  input {
+    @include formStyle();
+  }
+  input[placeholder] {
+    border: none;
+  }
+  &input[placeholder]:active {
+    background-color: $border;
+    color: white;
+  }
+  textarea {
+    @include formStyle();
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  input[submit] {
+    &:hover {
+      color: border;
+      border: red solid 1px;
+    }
+  }
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+/*=============================================
+=            MEDIA QUERIES            =
+=============================================*/
+
+@media (min-width: 1200px) {
+  .container-my {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  * {
+    font-size: 48%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-item {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+}
+@media (max-width: 576px) {
+  * {
+    font-size: 40%;
+  }
+  .copyright p {
+    padding: 5px;
+    margin: 0;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    .footer-right {
+      margin-left: 40px;
+    }
+    a {
+      font-size: 2rem;
+    }
+    textarea {
+      height: 70px;
+    }
+  }
+}
