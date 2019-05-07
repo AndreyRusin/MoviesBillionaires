@@ -11,7 +11,6 @@
     />
    <style>
      body{
-       height:100%;
        font-size: 62.5%;
      }
      a{
@@ -24,11 +23,16 @@
      .copyright__text{
        font-size: 2rem;
      }
+     @media (max-width:576px){
+       *{
+         font-size: 40%;
+       }
+     }
    </style>
   </head>
   <body class="bg-dark">
     <header class="header">
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">
           <img src="img/Logo.png" alt="Modernist Logo" />
         </a>
@@ -505,12 +509,6 @@
       </a>
     </div>
 
-
-    <div class="copyright">
-          <p class="copyright__text text-center bg-dark text-light p-4">
-            &copy Samvel Nikogosian Ltd - All Rights Reserved
-          </p>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
