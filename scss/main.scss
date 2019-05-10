@@ -8,6 +8,9 @@ $border: #707070;
   background-color: $bg-color;
   border: none;
 }
+.carousel i {
+  font-size: 7rem;
+}
 * {
   font-size: 62.5%;
 }
@@ -16,8 +19,19 @@ a {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.nav_slider {
+  text-align: center;
+  border: none;
+  a {
+    display: inline-block;
+  }
+}
 ul {
   list-style: none;
+}
+.here > button > i {
+  font-size: 5rem;
 }
 .header {
   padding-top: 2rem;
