@@ -8,6 +8,10 @@ $border: #707070;
   background-color: $bg-color;
   border: none;
 }
+
+.container-fluid > h1 {
+  font-size: 6rem;
+}
 .carousel i {
   font-size: 7rem;
 }
@@ -215,8 +219,8 @@ ul {
     padding: 5px;
     margin: 0;
   }
-  .lalala {
-    font-size: 10px;
+  .container-fluid > h1 {
+    font-size: 3rem;
   }
   .footer {
     flex-direction: column-reverse;
