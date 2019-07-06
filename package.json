@@ -4,7 +4,7 @@
   "description": "MyApp\r This is my app.",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,18 @@
   "bugs": {
     "url": "https://github.com/AndreyRusin/MoviesBillionaires/issues"
   },
-  "homepage": "https://github.com/AndreyRusin/MoviesBillionaires#readme",
+  "homepage": "https://andreyrusin.github.io/MoviesBillionaires",
   "dependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-plumber": "^1.2.1"
   }
 }
